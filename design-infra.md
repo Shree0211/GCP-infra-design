@@ -50,3 +50,30 @@ to communicate with the database.
 - A service account will be created for the Cloud Run service of least privilege.
 - The service account will only have permission to access required secrets from Secret Manager.
 
+-----------------------------------------------------------------------------
+
+* Logging and Monitoring
+
+Application and infrastructure logs will be automatically collected using Google Cloud Operations Suite.
+
+Logs include:
+- application logs
+- request logs
+- error events
+- deployment logs
+
+Monitoring
+Cloud Monitoring will track service health using metrics such as:
+- request latency
+- error rate
+- instance scaling
+
+Alerting
+Alerts can be created and configured to notify the user and team in case of
+- High CPU/memory usage
+- service downtime
+- increased error rates
+
+Observability
+Logs can be exported to Splunk for centralized monitoring,
+dashboard creation, and incident analysis
