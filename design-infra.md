@@ -14,3 +14,18 @@ In our case we will use Cloud Run. Because of the following reasons:-
 * Why not Compute Engine?
 - Compute Engine requires manual instance management, scaling setup,
 and patch management which increases operational effort in our case.
+
+----------------------------------------------------------------------------------------
+
+* Database Choice (MongoDB)
+
+MongoDB will be hosted using MongoDB Atlas instead of self-managed
+MongoDB instances.
+
+* Why MongoDB Atlas?
+- Fully managed database service
+- Automated backups and patching
+- Built-in replication and high availability
+
+Cloud Run service will securely connect to MongoDB Atlas using
+private networking and database credentials stored in Secret Manager
