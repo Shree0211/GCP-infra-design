@@ -1,0 +1,17 @@
+      Users
+	|
+  HTTPS Load Balancer
+	|
+ ---------------------------------------------------
+|                                                  |
+|  Google Cloud Platform                           |
+|                                                  |
+|  Secret Manager                                  |
+|       |                                          |
+|  Cloud Run (sync-service) ->Monitoring (Splunk)  |
+|       |                                          |
+|  Serverless VPC Connector                        |
+|                                                  |
+ ---------------------------------------------------
+        |
+     MongoDB Atlas
