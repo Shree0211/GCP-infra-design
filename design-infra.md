@@ -39,4 +39,14 @@ private networking and database credentials stored in Secret Manager
 * Database Connectivity -It will be in the private subnet. Only the application service will be allowed
 to communicate with the database.
 
+-----------------------------------------------------------------------------
+
+* Secrets & IAM Design
+
+* Secrets Management
+- Application secrets such as MongoDB connection strings, API keys, and authentication credentials will be stored in Google Cloud Secret Manager.
+
+* IAM 
+- A service account will be created for the Cloud Run service of least privilege.
+- The service account will only have permission to access required secrets from Secret Manager.
 
