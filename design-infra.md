@@ -29,3 +29,14 @@ MongoDB instances.
 
 Cloud Run service will securely connect to MongoDB Atlas using
 private networking and database credentials stored in Secret Manager
+
+-----------------------------------------------------------------------------
+
+* VPC Networking Design
+
+* Cloud Run - Cloud Run will connect to the VPC using a Serverless VPC Connector
+* Ingress Configuration - External users will access the application through a HTTPS Load Balancer.
+* Database Connectivity -It will be in the private subnet. Only the application service will be allowed
+to communicate with the database.
+
+
